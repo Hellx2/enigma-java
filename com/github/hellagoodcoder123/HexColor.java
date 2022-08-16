@@ -28,6 +28,9 @@ public class HexColor extends Entity {
     String m=l=="15"?"F":(l=="14"?"E":(l=="13"?"D":(l=="12"?"C":(l=="11"?"B":(l=="10"?"A":l)))));
     return "#"+d+f+g+j+k+m;
   }
+  public RGBColor toRGB(){
+    return new RGBColor(red,green,blue);
+  }
   public HexColor(byte red,byte green,byte blue){
     this.red=red;
     this.green=green;
